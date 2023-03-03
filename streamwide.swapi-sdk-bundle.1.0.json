@@ -29,7 +29,7 @@
                         "  retry_status: 401",
                         "  retry_sleep_time: 1                              # sleep before retry in sec",
                         "  user_agent: 'project_agent'",
-                        "  logger: 'LoggerInterface                         # default LoggerInterface will use symfony logger'"
+                        "  logger: Psr\Log\LoggerInterface                  # default LoggerInterface will use symfony logger"
                     ],
                     "executable": false
                 }
