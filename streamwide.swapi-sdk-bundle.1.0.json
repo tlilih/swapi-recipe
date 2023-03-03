@@ -11,18 +11,18 @@
           "config/": "%CONFIG_DIR%"
         },
         "env": {
-          "base_url": "https://swapi-URL.streamwide.com",
-          "api_uri": "/api/v1",
-          "token_uri": "/request/token"
+          "BASE_URL": "https://swapi-URL.streamwide.com",
+          "API_URI": "/api/v1",
+          "TOKEN_URI": "/request/token"
         }
       },
       "files": {
                 "config/packages/swapi.yaml": {
                     "contents": [
                         "swapi:",
-                        "  base_url: '%env(base_url)%'",
-                        "  api_uri: '%env(api_uri)%'",
-                        "  token_uri: '%env(token_uri)%'",
+                        "  base_url: '%env(BASE_URL)%'",
+                        "  api_uri: '%env(API_URI)%'",
+                        "  token_uri: '%env(TOKEN_URI)%'",
                         "  verify_peer: false",
                         "  max_attempts: 15",
                         "  retry_attempts: 2                                # must be greater than 1",
