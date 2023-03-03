@@ -1,0 +1,40 @@
+{
+  "manifests": {
+    "streamwide/swapi-sdk-bundle": {
+      "manifest": {
+        "bundles": {
+          "StreamWide\\SwapiSdkBundle\\SwapiSdkBundle": [
+            "all"
+          ]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%"
+        },
+        "env": {
+          "base_url": "https://swapi-URL.streamwide.com",
+          "api_uri": "/api/v1",
+          "token_uri": "/request/token"
+        }
+      },
+      "files": {
+                "config/packages/swapi.yaml": {
+                    "contents": [
+                        "swapi:",
+                        "  base_url: '%env(base_url)%'",
+                        "  api_uri: '%env(api_uri)%'",
+                        "  token_uri: '%env(token_uri)%'",
+                        "  verify_peer: false",
+                        "  max_attempts: 15",
+                        "  retry_attempts: 2                                  # must be greater than 1",
+                        "  retry_status: 401",
+                        "  retry_sleep_time: 1                              # sleep before retry in sec",
+                        "  user_agent: 'project_agent'",
+                        "  logger: '# default LoggerInterface will use symfony logger'"
+                    ],
+                    "executable": false
+                }
+            },
+      "ref": "ee42b490ab61b0b077a9ccd92b57ff1bed695007"
+    }
+  }
+}
