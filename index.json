@@ -1,0 +1,14 @@
+{
+    "recipes": {
+        "streamwide/swapi-sdk-bundle": [
+            "1.0"
+        ]
+    },
+    "branch": "master",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/tlilih/swapi-recipe",
+        "origin_template": "{package}:{version}@github.com/tlilih/swapi-recipe:master",
+        "recipe_template": "https://api.github.com/repos/tlilih/swapi-recipe/contents/streamwide.swapi-sdk-bundle.1.0.json"
+    }
+}
