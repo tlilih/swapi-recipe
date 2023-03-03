@@ -25,11 +25,11 @@
                         "  token_uri: '%env(token_uri)%'",
                         "  verify_peer: false",
                         "  max_attempts: 15",
-                        "  retry_attempts: 2                                  # must be greater than 1",
+                        "  retry_attempts: 2                                # must be greater than 1",
                         "  retry_status: 401",
                         "  retry_sleep_time: 1                              # sleep before retry in sec",
                         "  user_agent: 'project_agent'",
-                        "  logger: '# default LoggerInterface will use symfony logger'"
+                        "  logger: 'LoggerInterface                         # default LoggerInterface will use symfony logger'"
                     ],
                     "executable": false
                 }
